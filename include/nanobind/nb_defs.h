@@ -40,7 +40,7 @@
 #  endif
 #endif
 
-#if defined(__GNUC__)
+#if defined(__GNUC__) && !defined(_WIN32)
 #  define NB_NAMESPACE nanobind __attribute__((visibility("hidden")))
 #else
 #  define NB_NAMESPACE nanobind
