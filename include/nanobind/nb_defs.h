@@ -64,7 +64,7 @@
 #  define NB_CORE
 #endif
 
-#if !defined(NB_SHARED) && defined(__GNUC__)
+#if !defined(NB_SHARED) && defined(__GNUC__) && !defined(_WIN32)
 #  define NB_EXPORT_SHARED __attribute__ ((visibility("hidden")))
 #else
 #  define NB_EXPORT_SHARED

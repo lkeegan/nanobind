@@ -23,8 +23,6 @@ jobs:
 
     steps:
     - uses: spatial-model-editor/setup-ci@2024.04.23
-      with:
-        sme_deps: '2024.04.24'
 
     - uses: actions/checkout@v4
       with:
